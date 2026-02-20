@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MARDOCHEE KALOKOLA MOKILI SHOP</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+<h1>MARDOCHEE KALOKOLA MOKILI SHOP</h1>
+<nav>
+<a href="#telephones">Téléphones</a>
+<a href="#ordinateurs">Ordinateurs</a>
+<a href="#panier">Panier</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+<a href="#politique">Politique</a>
+</nav>
+</header>
+
+<!-- SECTION TELEPHONES -->
+
+<section id="telephones">
+<h2 style="text-align:center;">Nos Téléphones</h2>
+
+<div class="produits">
+
+<div class="produit">
+<img src="images/tel1.jpg">
+<h3>Samsung Galaxy A14</h3>
+<p>250$</p>
+<button onclick="ajouterAuPanier('Samsung Galaxy A14',250)">Ajouter</button>
+</div>
+
+<div class="produit">
+<img src="images/tel2.jpg">
+<h3>iPhone 11</h3>
+<p>600$</p>
+<button onclick="ajouterAuPanier('iPhone 11',600)">Ajouter</button>
+</div>
+
+<div class="produit">
+<img src="images/tel3.jpg">
+<h3>Tecno Spark 10</h3>
+<p>180$</p>
+<button onclick="ajouterAuPanier('Tecno Spark 10',180)">Ajouter</button>
+</div>
+
+</div>
+</section>
+
+<!-- SECTION ORDINATEURS -->
+
+<section id="ordinateurs">
+<h2 style="text-align:center;">Nos Ordinateurs</h2>
+
+<div class="produits">
+
+<div class="produit">
+<img src="images/pc1.jpg">
+<h3>HP EliteBook</h3>
+<p>450$</p>
+<button onclick="ajouterAuPanier('HP EliteBook',450)">Ajouter</button>
+</div>
+
+<div class="produit">
+<img src="images/pc2.jpg">
+<h3>Dell Inspiron</h3>
+<p>500$</p>
+<button onclick="ajouterAuPanier('Dell Inspiron',500)">Ajouter</button>
+</div>
+
+<div class="produit">
+<img src="images/pc3.jpg">
+<h3>Lenovo ThinkPad</h3>
+<p>550$</p>
+<button onclick="ajouterAuPanier('Lenovo ThinkPad',550)">Ajouter</button>
+</div>
+
+</div>
+</section>
+
+<!-- SECTION PANIER -->
+
+<section id="panier" class="hero">
+<h2>Votre Panier</h2>
+<div id="contenuPanier"></div>
+<h3 id="total"></h3>
+<button onclick="viderPanier()">Vider le panier</button>
+</section>
+
+<!-- SECTION FAQ -->
+
+<section id="faq" class="hero">
+<h2>FAQ</h2>
+<p><b>Livraison :</b> 24h à 72h partout en RDC.</p>
+<p><b>Paiement :</b> Mobile Money ou Cash.</p>
+<p><b>Garantie :</b> 3 à 12 mois.</p>
+</section>
+
+<!-- SECTION CONTACT -->
+
+<section id="contact" class="hero">
+<h2>Contact</h2>
+<p>Email: contact@mardocheeshop.com</p>
+<p>Téléphone: +243 821942761</p>
+</section>
+
+<!-- SECTION POLITIQUE -->
+
+<section id="politique" class="hero">
+<h2>Politique</h2>
+<p>Vos données personnelles sont protégées.</p>
+</section>
+
+<footer>
+© 2026 MARDOCHEE KALOKOLA MOKILI SHOP
+</footer>
+
+<script>
+afficherPanier();
+</script>
+
+</body>
+</html>

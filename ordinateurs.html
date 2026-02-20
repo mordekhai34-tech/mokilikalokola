@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ordinateurs</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Ordinateurs</h1>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="telephones.html">Téléphones</a>
+<a href="ordinateurs.html">Ordinateurs</a>
+<a href="contact.html">Contact</a>
+<a href="politique.html">Politique</a>
+</nav>
+</header>
+
+<div class="produits">
+
+<div class="produit" onclick="ouvrirProduit('HP EliteBook',450)">
+<img src="images/pc1.jpg">
+<h3>HP EliteBook</h3>
+<p>450$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Dell Inspiron',500)">
+<img src="images/pc2.jpg">
+<h3>Dell Inspiron</h3>
+<p>500$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Lenovo ThinkPad',550)">
+<img src="images/pc3.jpg">
+<h3>Lenovo ThinkPad</h3>
+<p>550$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('MacBook Air',1000)">
+<img src="images/pc4.jpg">
+<h3>MacBook Air</h3>
+<p>1000$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Asus VivoBook',480)">
+<img src="images/pc5.jpg">
+<h3>Asus VivoBook</h3>
+<p>480$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Acer Aspire',420)">
+<img src="images/pc6.jpg">
+<h3>Acer Aspire</h3>
+<p>420$</p>
+</div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="fermerModal()">&times;</span>
+<h2 id="nomProduit"></h2>
+<p id="prixProduit"></p>
+<input type="text" id="numero" placeholder="Numéro Mobile Money">
+<button onclick="payer()">Payer</button>
+</div>
+</div>
+
+</body>
+</html>

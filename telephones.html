@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Téléphones</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+<h1>Téléphones</h1>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="telephones.html">Téléphones</a>
+<a href="ordinateurs.html">Ordinateurs</a>
+<a href="contact.html">Contact</a>
+<a href="politique.html">Politique</a>
+</nav>
+</header>
+
+<div class="produits">
+
+<div class="produit" onclick="ouvrirProduit('Samsung Galaxy A14',250)">
+<img src="images/tel1.jpg">
+<h3>Samsung Galaxy A14</h3>
+<p>250$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('iPhone 11',600)">
+<img src="images/tel2.jpg">
+<h3>iPhone 11</h3>
+<p>600$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Tecno Spark 10',180)">
+<img src="images/tel3.jpg">
+<h3>Tecno Spark 10</h3>
+<p>180$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Infinix Hot 30',200)">
+<img src="images/tel4.jpg">
+<h3>Infinix Hot 30</h3>
+<p>200$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('Redmi Note 12',300)">
+<img src="images/tel5.jpg">
+<h3>Redmi Note 12</h3>
+<p>300$</p>
+</div>
+
+<div class="produit" onclick="ouvrirProduit('iPhone 13',900)">
+<img src="images/tel6.jpg">
+<h3>iPhone 13</h3>
+<p>900$</p>
+</div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close" onclick="fermerModal()">&times;</span>
+<h2 id="nomProduit"></h2>
+<p id="prixProduit"></p>
+<input type="text" id="numero" placeholder="Numéro Mobile Money">
+<button onclick="payer()">Payer</button>
+</div>
+</div>
+
+</body>
+</html>
